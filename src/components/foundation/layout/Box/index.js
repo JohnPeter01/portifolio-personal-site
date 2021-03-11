@@ -1,16 +1,19 @@
 import styled from 'styled-components';
-// import { propToStyle } from '../../../../theme/Utils/propToStyle';
+import { propToStyle } from '../../../../theme/utils/propToStyle';
 
 export const Box = styled.div`
-  /* ${propToStyle('flex')}
+  ${propToStyle('flex')}
   ${propToStyle('display')}
   ${propToStyle('flexDirection')}
   ${propToStyle('justifyContent')}
   ${propToStyle('flexWrap')}
+  ${propToStyle('borderRadius')}
+  ${propToStyle('background')}
   ${propToStyle('backgroundImage')}
   ${propToStyle('backgroundColor')}
   ${propToStyle('backgroundRepeat')}
   ${propToStyle('backgroundPosition')}
   ${propToStyle('boxShadow')}
-  ${propToStyle('padding')} */
+  ${propToStyle('padding')}
+  ${propToStyle('opacity')}
 `;

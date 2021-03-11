@@ -1,3 +1,5 @@
+import typographyVariants from './TypographyVariants';
+
 const colors = {
   light: {
     background: {
@@ -27,7 +29,7 @@ const colors = {
     },
     tertiary: {
       main: {
-        color: '#070C0E',
+        color: '#F0F1E8',
         contrastText: '#fff',
       },
       light: {
@@ -52,4 +54,5 @@ export const breakpoints = {
 export default {
   colors,
   breakpoints,
+  typographyVariants,
 };
