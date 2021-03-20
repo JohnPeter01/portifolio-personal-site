@@ -1,8 +1,8 @@
 import React from 'react';
-import { Box } from '../src/components/foundation/layout/Box';
+import { Box } from '../src/components/layout/Box';
 // import GitHubCorner from '../src/components/common/GitHubCorner';
 import Capa from '../src/components/common/Capa';
-import Menu from '../src/components/common/Menu';
+import Menu from '../src/components/navigation/Menu';
 import Destaque from '../src/components/common/Destaque';
 import BoxProjetos from '../src/components/common/BoxProjetos';
 import Footer from '../src/components/common/Footer';

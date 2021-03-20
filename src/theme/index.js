@@ -55,4 +55,5 @@ export default {
   colors,
   breakpoints,
   typographyVariants,
+  fontFamily: '\'Roboto Mono\', sans-serif',
 };

@@ -1,14 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
-import { Grid } from '../../foundation/Layout/Grid';
+import { Grid } from '../../layout/Grid';
 import Text from '../../foundation/Text';
 import { CapaWrapper } from './styles/style';
-import { Box } from '../../foundation/Layout/Box';
-import Avatar from '../Avatar';
+import { Box } from '../../layout/Box';
+import Avatar from '../../display/Avatar';
 
 const Capa = () => (
-  <CapaWrapper objectFit="cover">
-    <Image src="/images/cover.jpg" alt="Imagem de Capa" layout="fill" />
+  <CapaWrapper
+  >
+    <Image
+      src="/images/cover.jpg"
+      alt="Imagem de Capa"
+      layout="fill"
+    />
     <Grid.Container>
       <Grid.Col
         height="100vh"
@@ -34,7 +39,6 @@ const Capa = () => (
           <Text
             variant="title"
             tag="h1"
-              // textAlign="right"
             textAlign={{
               xs: 'center',
               md: 'center',
@@ -54,13 +58,13 @@ const Capa = () => (
           >
             Front-end Developer
           </Text>
-          {/* <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
               <JavascriptIcon />
               <ReactIcon />
               <NextIcon />
               <StyledIcon />
               <TailwindIcon />
-            </div> */}
+            </div>
         </Box>
       </Grid.Col>
     </Grid.Container>
