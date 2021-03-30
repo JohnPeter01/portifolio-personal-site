@@ -20,11 +20,11 @@ const SectionTitle = ({ title }) => (
   </Box>
 );
 
-Text.defaultProps = {
+SectionTitle.defaultProps = {
   title: 'Title',
 };
 
-Text.propTypes = {
+SectionTitle.propTypes = {
   title: PropTypes.string,
 };
 

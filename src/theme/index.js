@@ -3,9 +3,6 @@ import typographyVariants from './TypographyVariants';
 const colors = {
   light: {
     background: {
-      light: {
-        color: '#FFFFFF',
-      },
       main: {
         color: '#233745',
       },
@@ -62,8 +59,3 @@ export default {
   typographyVariants,
   fontFamily: '\'Roboto Mono\', sans-serif',
 };
-
-
-
-
-
