@@ -7,7 +7,7 @@ const colors = {
         color: '#FFFFFF',
       },
       main: {
-        color: '#F2F2F2',
+        color: '#233745',
       },
     },
     borders: {
@@ -15,9 +15,15 @@ const colors = {
         color: '#F1F1F1',
       },
     },
+    icon: {
+      main: {
+        color: '#F0F1E8',
+        hover: '#0b8de6',
+      },
+    },
     primary: {
       main: {
-        color: '#D7385E',
+        color: '#00FFFF',
         contrastText: '#fff',
       },
     },
@@ -38,7 +44,6 @@ const colors = {
       },
     },
   },
-  dark: {},
 };
 /*
 Limitações das proporções de tela.
@@ -57,3 +62,8 @@ export default {
   typographyVariants,
   fontFamily: '\'Roboto Mono\', sans-serif',
 };
+
+
+
+
+
