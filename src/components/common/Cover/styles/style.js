@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const CapaWrapper = styled.div`
+export const CoverWrapper = styled.div`
   ${({ objectFit, borderImage }) => css`
     position: relative;
     width: 100vw;

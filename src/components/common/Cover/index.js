@@ -2,15 +2,17 @@ import React from 'react';
 import Image from 'next/image';
 import { Grid } from '../../layout/Grid';
 import Text from '../../foundation/Text';
-import { CapaWrapper } from './styles/style';
+import { CoverWrapper } from './styles/style';
 import { Box } from '../../layout/Box';
 import Avatar from '../../display/Avatar';
+import {
+  JavascriptIcon, NextIcon, ReactIcon, StyledIcon, TailwindIcon,
+} from '../Icons';
 
-const Capa = () => (
-  <CapaWrapper
-  >
+const Cover = () => (
+  <CoverWrapper>
     <Image
-      src="/images/cover.jpg"
+      src="/images/capa.jpg"
       alt="Imagem de Capa"
       layout="fill"
     />
@@ -58,18 +60,18 @@ const Capa = () => (
           >
             Front-end Developer
           </Text>
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <JavascriptIcon />
-              <ReactIcon />
-              <NextIcon />
-              <StyledIcon />
-              <TailwindIcon />
-            </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <JavascriptIcon />
+            <ReactIcon />
+            <NextIcon />
+            <StyledIcon />
+            <TailwindIcon />
+          </div>
         </Box>
       </Grid.Col>
     </Grid.Container>
-  </CapaWrapper>
+  </CoverWrapper>
 
 );
 
-export default Capa;
+export default Cover;

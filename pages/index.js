@@ -1,20 +1,20 @@
 import React from 'react';
 import { Box } from '../src/components/layout/Box';
-// import GitHubCorner from '../src/components/common/GitHubCorner';
-import Capa from '../src/components/common/Capa';
+import Cover from '../src/components/common/Cover';
 import Menu from '../src/components/navigation/Menu';
-import Destaque from '../src/components/common/Destaque';
-import BoxProjetos from '../src/components/common/BoxProjetos';
+import ProjectBox from '../src/components/common/ProjectBox';
 import Footer from '../src/components/common/Footer';
+import Highlight from '../src/components/layout/Highlight';
+import SectionTitle from '../src/components/common/SectionTitle';
 
 export default function Home() {
   return (
     <Box>
-      {/* <GitHubCorner /> */}
-      <Capa />
       <Menu />
-      <Destaque />
-      <BoxProjetos />
+      <Cover />
+      <SectionTitle />
+      <Highlight />
+      <ProjectBox />
       <Footer />
     </Box>
   );
