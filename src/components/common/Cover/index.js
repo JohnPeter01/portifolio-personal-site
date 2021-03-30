@@ -1,24 +1,17 @@
 import React from 'react';
-import Image from 'next/image';
 import { Grid } from '../../layout/Grid';
 import Text from '../../foundation/Text';
 import { CoverWrapper } from './styles/style';
 import { Box } from '../../layout/Box';
 import Avatar from '../../display/Avatar';
 import {
-  JavascriptIcon, NextIcon, ReactIcon, StyledIcon, TailwindIcon,
-} from '../Icons';
+  JavaIcon, JavascriptIcon, NextIcon, ReactIcon, StyledIcon,
+} from '../../display/Icons';
 
 const Cover = () => (
   <CoverWrapper>
-    <Image
-      src="/images/capa.jpg"
-      alt="Imagem de Capa"
-      layout="fill"
-    />
     <Grid.Container>
       <Grid.Col
-        height="100vh"
         value={{ xs: 12, md: 12 }}
         offset={{ xs: 0, md: 0 }}
         display="flex"
@@ -28,7 +21,6 @@ const Cover = () => (
       >
         <Box
           padding="24px"
-          background=" radial-gradient(ellipse at 45px 45px , rgba(0, 255, 255, 10) 7%, rgba(0, 0, 255, 0.5) 50%, #0000FF 95%);"
           opacity="0.95"
           borderRadius="5px"
         >
@@ -60,12 +52,12 @@ const Cover = () => (
           >
             Front-end Developer
           </Text>
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <JavaIcon />
+            <NextIcon />
             <JavascriptIcon />
             <ReactIcon />
-            <NextIcon />
             <StyledIcon />
-            <TailwindIcon />
           </div>
         </Box>
       </Grid.Col>

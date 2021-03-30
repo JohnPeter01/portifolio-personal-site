@@ -1,13 +1,13 @@
 import React from 'react';
 import { Flex } from '../../layout/Flex';
 import { Box } from '../../layout/Box';
-import { Button } from '../../form/Button';
+import Text from '../../foundation/Text';
+import { NextIcon } from '../../display/Icons';
 
 const Menu = () => (
   <Box
     width="100vw"
-    height="90px"
-    boxShadow="inset 0 0 1em gold"
+    height="80px"
     display="flex"
     justifyContent="center"
     alignItems="center"
@@ -21,28 +21,32 @@ const Menu = () => (
           marginLeft: '45px',
         }}
       >
-        Button 1
+        <NextIcon />
       </div>
     </Flex.Container>
     <Flex.Container
       display="flex"
-      gap={50}
-      justifyContent="flex-end"
+      gap={100}
+      justifyContent="center"
       alignItems="center"
       width="100vw"
     >
-      <Button
-        ghost
-        variant="light.primary.main"
+      <Text
+        tag="a"
+        herf="#"
+        variant="title"
+        color="light.tertiary.main"
       >
-        Button 2
-      </Button>
-      <Button
-        ghost
-        variant="light.primary.main"
+        Projetos
+      </Text>
+      <Text
+        tag="a"
+        herf="#"
+        variant="title"
+        color="light.tertiary.main"
       >
-        Button 3
-      </Button>
+        Sobre
+      </Text>
     </Flex.Container>
   </Box>
 );

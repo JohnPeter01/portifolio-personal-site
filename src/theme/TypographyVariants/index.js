@@ -5,9 +5,9 @@ const typographyVariants = {
     fontWeight: '700',
     lineHeight: 1.25, // 125%
   },
-  titleXS: {
-    fontSize: '24px',
-    fontWeight: '500',
+  sectionTitle: {
+    fontSize: '36px',
+    fontWeight: '700',
     lineHeight: 1.25, // 125%
   },
   // [subTitle]

@@ -1,7 +1,13 @@
 import React from 'react';
+import { LinkedInIcon, GitHubIcon } from '../../display/Icons';
 
-const Footer = () => (
-  <h1>Footer</h1>
-);
+import { FooterWrapper } from './styles';
 
-export default Footer;
+export default function Footer() {
+  return (
+    <FooterWrapper>
+      <GitHubIcon />
+      <LinkedInIcon />
+    </FooterWrapper>
+  );
+}

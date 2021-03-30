@@ -1,7 +1,31 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Text from '../../foundation/Text';
+import { Box } from '../../layout/Box';
 
-const SectionTitle = () => (
-  <h1>SectionTitle</h1>
+const SectionTitle = ({ title }) => (
+  <Box
+    display="flex"
+    alignItems="center"
+    justifyContent="center"
+    margin
+  >
+    <Text
+      variant="sectionTitle"
+      tag="h1"
+      color="light.tertiary.main"
+    >
+      {title}
+    </Text>
+  </Box>
 );
+
+Text.defaultProps = {
+  title: 'Title',
+};
+
+Text.propTypes = {
+  title: PropTypes.string,
+};
 
 export default SectionTitle;
